@@ -2,19 +2,41 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 12rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
     padding: 5rem;
     background-color: rgb(136, 132, 132, 0.1);
     height: 70vh;
+     transition: transform 0.4s ease-in-out;
     box-shadow: rgb(136, 132, 132, 0.9);
 }
+.introBody:hover{
+  transform: scale(0.95);
+}
+.sayHello{
+  background-color: #2684d6;
+  width: 10rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.sayHello a{
+  text-decoration: none;
+   color: white;
+}
+
 .myPics{
     background: linear-gradient(90deg, #61c86d, #bd77be, #d58025, #2684d6);
-    
+
     animation: moveGradient 5s ease infinite;
     background-size: 800% 800%;
-    width: 17rem;
-    height: 23rem;
+    width: 22rem;
+    height: 39rem;
      display: flex;
     align-items: center;
     justify-content: center;
@@ -25,10 +47,9 @@
     align-items: end;
     justify-content: center;
    background: linear-gradient(270deg, #61c86d, #bd77be, #d58025, #2684d6);
-    /* border-radius: 40%; */
-    width: 15rem;
+    width: 18rem;
     background-size: 800% 800%;
-    height: 18rem;
+    height: 22rem;
      animation: moveGradient 10s ease infinite;
      border-radius: 50%;
 }
@@ -45,6 +66,58 @@
     }
   }
 .myPic img{
-    width: 18rem;
-    height: 20rem;
+    width: 25rem;
+    height: 30rem;
 } 
+
+/* bounce animation */
+@keyframes bounceSides {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+}
+
+/* apply animation on load */
+.introBody h1,
+.introBody h2,
+.introBody img,
+.introBody a,
+.introBody p {
+  display: inline-block;
+  animation: bounceSides 2s ease-in-out;
+}
+
+/* bounce again when hovered */
+.introBody:hover h1,
+.introBody:hover h2,
+.introBody img,
+.introBody a,
+.introBody:hover p {
+  animation: bounceSides 1s ease-in-out;
+}
+.exps{
+  display: flex;
+  column-gap: 0.5rem;
+  margin-top: 2rem;
+}
+.exp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgb(40, 126, 247); */
+  background-color: #d66726;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 6px;
+  color: white;
+}

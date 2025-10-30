@@ -1,4 +1,103 @@
+.MyWorkbody{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    padding: 5rem;
+    background-color: rgb(136, 132, 132, 0.1);
+    height: 70vh;
+     transition: transform 0.4s ease-in-out;
+    box-shadow: rgb(136, 132, 132, 0.9);
+}
+.MyWorkbody:hover{
+  transform: scale(1.04);
+}
+.mySocials{
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(211, 207, 207,0.6);
+    border-radius: 6px;
+    width: 18rem;
+    height: 4rem;
+    margin-top: -2rem;
+}
+.mySocials a{
+    text-decoration: none;
+}
+.mySocials a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7f9;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+}
+.f{
+    color: rgb(39, 1, 253);
+}
+.i{
+    color: rgba(214, 32, 32, 0.7);
+}
+.li{
+    color: rgba(2, 20, 107, 0.7);
+}
+.w{
+    color: rgb(12, 205, 60);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    column-gap: 1rem;
+}
+.buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.7rem;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    width: 12rem;
+    background-color: #2684d6;
+    height: 3.5rem;
+    color: white;
+    border-radius: 6px;
+}
 .myPic img{
     width: 20rem;
-    height: 20rem;
+    height: 23rem;
+    border-radius: 0.6rem;
+}
+@keyframes bounceSides {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+}
+.MyWorkbody h1,
+.MyWorkbody h2,
+.MyWorkbody img,
+.MyWorkbody a,
+.MyWorkbody p {
+  display: inline-block;
+  animation: bounceSides 2s ease-in-out;
+}
+.description{
+    margin-top: 2rem;
 }

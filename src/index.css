@@ -10,11 +10,46 @@ html {
 }
 body {
   font-size: 1.6rem;
+  /* background-color: black; */
 }
-.nav{
-  position: fixed;
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --nav-bg: rgba(179, 157, 184, 0.6);
 }
-.section {
+
+[data-theme="dark"] {
+  --bg-color: #030341;
+  --text-color: #e5e5e5;
+  --nav-bg: rgba(40, 40, 40, 0.9);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.headerContainer {
+  background-color: var(--nav-bg);
+}
+
+.themeToggle {
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.themeToggle:hover {
+  transform: scale(1.1);
+}
+
+
+/* .section {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -78,4 +113,4 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
+} */

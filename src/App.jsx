@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./folder/Contact";
@@ -13,6 +13,31 @@ import WhatIDo from "./folder/WhatIDo";
 import "./index.css";
 
 export default function App() {
+  const [theme, setTheme] = useState("light");
+
+  // ✅ Load saved theme on mount
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.body.setAttribute("data-theme", savedTheme);
+    } else {
+      document.body.setAttribute("data-theme", "light");
+    }
+  }, []);
+
+  // ✅ Apply and save theme whenever it changes
+  useEffect(() => {
+    document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // ✅ Toggle between themes
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
+  // ✅ Initialize AOS
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -23,12 +48,12 @@ export default function App() {
 
   return (
     <>
-    
-      <Nav />
+      <Nav theme={theme} toggleTheme={toggleTheme} />
+
       <section data-aos="fade-up" className="section intro-bg">
         <Introduction />
       </section>
-
+    
       <section data-aos="fade-down" className="section work-bg">
         <MyWork />
       </section>
@@ -54,12 +79,6 @@ export default function App() {
       </section>
 
       <Footer />
-      {/* <section data-aos="flip-left" className="section contact-bg">
-        <Contact />
-      </section>
-      <section data-aos="flip-right" className="section contact-bg">
-        <Contact />
-      </section> */}
     </>
   );
 }
