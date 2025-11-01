@@ -14,7 +14,7 @@
     box-shadow: rgb(136, 132, 132, 0.9);
 }
 .introBody:hover{
-  transform: scale(0.95);
+  transform: scale(0.980);
 }
 .sayHello{
   background-color: #2684d6;

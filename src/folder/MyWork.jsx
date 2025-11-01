@@ -30,10 +30,18 @@ export default function MyWork() {
 
         <div className={styles.professionalIntro}>
           <h2 className={styles.title}>
-            I am a Professional FullStack <br /> Experience Developer
+           About Me
           </h2>
           <br />
+          
           <p className={styles.description}>
+            I'm a passionate full-stack developer and app creator  <br /> who loves
+            building dynamic,
+            user-friendly applications. <br />From crafting interactive web pages with
+            React and Node.js <br /> to developing Android apps in Java, I enjoy
+            turning ideas into <br /> functional digital experiences. My focus is on
+            clean design, smooth <br /> functionality, and creating projects that truly
+            stand out. <br />
             Am also a methodical and analytical problem-solver <br /> with a collaborative approach, always looking to learn <br /> and grow while effectively communicating technical concepts.
           </p>
 
@@ -43,7 +51,6 @@ export default function MyWork() {
               target="_blank"
               rel="noopener noreferrer"
             >
-             {/* <AiFillGithub />  */}
              My Projects
             </a>
             <a href="images/Oshunyingbo Adedeji CV.pdf" download>

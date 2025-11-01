@@ -9,10 +9,9 @@ export default function ProjectIdea(){
         </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
          Quidem soluta ipsam molestias iusto asperiores</p>
-
-         <a href=""> Let's work Together</a>
+         <a >Let's work Together</a>
         </div>
 
     </div>
-    </>
+    </> 
 }

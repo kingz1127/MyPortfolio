@@ -66,13 +66,15 @@ export default function App() {
         <Portfolio />
       </section>
 
+      <section data-aos="flip-up" className="section whatido-bg">
+        <WhatIDo />
+      </section>
+
       <section data-aos="flip-up" className="section projectidea-bg">
         <ProjectIdea />
       </section>
 
-      <section data-aos="flip-up" className="section whatido-bg">
-        <WhatIDo />
-      </section>
+      
 
       <section data-aos="flip-down" className="section contact-bg">
         <Contact />

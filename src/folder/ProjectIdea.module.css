@@ -1,0 +1,33 @@
+.projectIdeaBody{
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    background-color: rgb(64, 63, 63,0.4);
+    padding: 5rem;
+    /* background-color: rgb(136, 132, 132, 0.1); */
+     transition: transform 0.4s ease-in-out;
+    box-shadow: rgb(136, 132, 132, 0.9);
+    text-align: center;
+}
+.projectIdeaBody{
+  transform: scale(1.1);
+}
+.projectIdeaBody p{
+    margin-top: 1rem;
+}
+
+.projectIdeaBody div a{
+    text-decoration: none;
+    background-color: rgb(55, 55, 204);
+    color: white;
+    border-radius: 5px;
+    padding: 0.8rem;
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+}

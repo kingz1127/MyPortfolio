@@ -14,7 +14,7 @@
     box-shadow: rgb(136, 132, 132, 0.9);
 }
 .MyWorkbody:hover{
-  transform: scale(1.04);
+  transform: scale(1.01);
 }
 .mySocials{
     display: flex;

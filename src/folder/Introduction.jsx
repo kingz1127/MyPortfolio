@@ -8,14 +8,8 @@ export default function Introduction() {
           <h2>Adedeji Oshunyingbo</h2>
           <br />
           <br />
-          <p>
-            I'm a passionate full-stack developer and app creator  <br /> who loves
-            building dynamic,
-            user-friendly applications. <br />From crafting interactive web pages with
-            React and Node.js <br /> to developing Android apps in Java, I enjoy
-            turning ideas into <br /> functional digital experiences. My focus is on
-            clean design, smooth <br /> functionality, and creating projects that truly
-            stand out.
+          <p style={{fontSize: "1.8rem"}}>
+             Full Stack Developer
           </p>
           <br />
           <br />
