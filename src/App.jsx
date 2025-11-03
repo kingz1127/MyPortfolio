@@ -42,6 +42,7 @@ export default function App() {
     AOS.init({
       duration: 1000,
       once: false,
+      
       easing: "ease-in-out",
     });
   }, []);
