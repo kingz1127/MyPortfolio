@@ -121,3 +121,94 @@
   border-radius: 6px;
   color: white;
 }
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN SECTION */
+/* ============================= */
+
+/* Tablet View (768px–1024px) */
+@media (max-width: 1024px) {
+  .introBody {
+    /* flex-direction: column; */
+    column-gap: 5rem;
+    row-gap: 3rem;
+    margin: 2rem;
+    padding: 3rem;
+    height: auto;
+  }
+
+  .myPics {
+    width: 18rem;
+    height: 32rem;
+  }
+
+  .myPic {
+    width: 14rem;
+    height: 18rem;
+  }
+
+  .myPic img {
+    width: 18rem;
+    height: 24rem;
+  }
+
+  .sayHello {
+    width: 8rem;
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+
+  .exp {
+    width: 10rem;
+    height: 3.5rem;
+  }
+}
+
+/* Mobile View (below 768px) */
+@media (max-width: 768px) {
+  .introBody {
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 2rem;
+    height: auto;
+    /* text-align: center; */
+  }
+
+  .myPics {
+    width: 15rem;
+    height: 26rem;
+  }
+
+  .myPic {
+    width: 12rem;
+    height: 15rem;
+  }
+
+  .myPic img {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .sayHello {
+    width: 7rem;
+    height: 2.8rem;
+    font-size: 0.85rem;
+  }
+
+  .exps {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .exp {
+    width: 9rem;
+    height: 3.2rem;
+  }
+
+  .introBody h1,
+  .introBody h2,
+  .introBody p {
+    font-size: 1rem;
+  }
+}

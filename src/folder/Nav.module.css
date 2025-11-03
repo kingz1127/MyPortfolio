@@ -110,3 +110,155 @@
 :global(.section) {
   padding-top: 100px; 
 }
+/* ============================= */
+/* 📱 RESPONSIVE HEADER SECTION */
+/* ============================= */
+
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.5rem;
+  }
+
+  .header nav a {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .initials p {
+    font-size: 1.5rem;
+  }
+
+  .a {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    /* flex-direction: column; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .initials {
+    /* flex-direction: column; */
+    row-gap: 0.3rem;
+  }
+
+  .initials p {
+    font-size: 1.3rem;
+    /* text-align: center; */
+  }
+
+  .a {
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1.2rem;
+  }
+
+  .header nav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.6rem;
+  }
+
+  .header nav a {
+    width: 9rem;
+    height: 2.8rem;
+    font-size: 0.9rem;
+  }
+
+  .themeToggle {
+    font-size: 1.8rem;
+    /* right: -35rem; */
+  }
+}
+/* ============================= */
+/* 📱 RESPONSIVE NAVBAR (HAMBURGER) */
+/* ============================= */
+
+/* Hide hamburger by default */
+.hamburger {
+  display: flex;
+  align-self: flex-end;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Hide nav on mobile by default */
+.navMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 70%;
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+    row-gap: 2rem;
+  }
+
+  .navMenu a {
+    color: white;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navMenu.active {
+    right: 0;
+  }
+
+  .themeToggle {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    top: 1rem;
+    /* left: 1rem; */
+    z-index: 1200;
+  }
+
+  .initials {
+    z-index: 1200;
+  }
+}

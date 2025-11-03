@@ -89,3 +89,71 @@
   display: inline-block;
   animation: bounceSides 2s ease-in-out;
 }
+/* ============ Tablets (max-width: 1024px) ============ */
+@media (max-width: 1024px) {
+  .portfolioBody {
+    padding: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .allProject {
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+
+  .kingzPlay,
+  .kingE {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .kingzPlay img {
+    width: 100%;
+    height: auto;
+  }
+
+  .kingE img {
+    width: 100%;
+    height: auto;
+  }
+
+  .more {
+    width: 10rem;
+    height: 2.8rem;
+  }
+}
+
+/* ============ Mobile Phones (max-width: 600px) ============ */
+@media (max-width: 600px) {
+  .portfolioBody {
+    margin: 1rem;
+    padding: 2rem;
+  }
+
+  .allProject {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .kingzPlay,
+  .kingE {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .kingzPlay img{
+    width: 60%;
+    height: 30%;
+  }
+
+  .more {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .more a {
+    font-size: 1rem;
+  }
+}

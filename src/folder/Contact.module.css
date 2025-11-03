@@ -1,3 +1,4 @@
+/* ✅ Existing styles (unchanged) */
 .ContactBody{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
@@ -11,11 +12,11 @@
     padding: 5rem;
     background-color: rgb(136, 132, 132, 0.1);
     text-align: center;
-     transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     box-shadow: rgb(136, 132, 132, 0.9);
 }
 .ContactBody:hover{
-     transform: scale(1.01);
+    transform: scale(1.01);
 }
 
 .location{
@@ -41,14 +42,13 @@
 
 .mySocials{
     display: flex;
-    justify-self: center;
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
     background-color: rgb(135, 129, 129);
     border-radius: 6px;
     width: 22rem;
-   margin-bottom: 1rem;
+    margin-bottom: 1rem;
     height: 4rem;
     margin-top: 1rem;
 }
@@ -64,18 +64,10 @@
     height: 3rem;
     border-radius: 4px;
 }
-.f{
-    color: rgb(39, 1, 253);
-}
-.i{
-    color: rgba(214, 32, 32, 0.7);
-}
-.li{
-    color: rgba(2, 20, 107, 0.7);
-}
-.w{
-    color: rgb(12, 205, 60);
-}
+.f{ color: rgb(39, 1, 253); }
+.i{ color: rgba(214, 32, 32, 0.7); }
+.li{ color: rgba(2, 20, 107, 0.7); }
+.w{ color: rgb(12, 205, 60); }
 
 .messageMe{
     display: flex;
@@ -114,19 +106,13 @@
     background-color: rgb(53, 53, 194);
     padding: 0.5rem;
 }
+
+/* Animation */
 @keyframes bounceSides {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-10px, -10px);
-  }
-  50% {
-    transform: translate(10px, 10px);
-  }
-  75% {
-    transform: translate(-5px, -5px);
-  }
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-10px, -10px); }
+  50% { transform: translate(10px, 10px); }
+  75% { transform: translate(-5px, -5px); }
 }
 .ContactBody h2,
 .ContactBody svg,
@@ -136,4 +122,69 @@
 .ContactBody h4{
   display: inline-block;
   animation: bounceSides 2s ease-in-out;
+}
+
+/* ✅ Responsive Design */
+
+/* Tablet (768px and below) */
+@media (max-width: 1024px) {
+  .ContactBody {
+    flex-direction: column;
+    margin: 2rem;
+    padding: 3rem;
+    row-gap: 2rem;
+  }
+
+  .mySocials {
+    position: relative;
+    width: 18rem;
+    margin-top: 2rem;
+  }
+
+  .messageMe {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .messageMe input {
+    font-size: 1.1rem;
+  }
+}
+
+/* Phone (600px and below) */
+@media (max-width: 600px) {
+  .ContactBody {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+    row-gap: 1.5rem;
+  }
+
+  .location {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .goLocation {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+  }
+
+  .mySocials {
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    padding: 0.8rem;
+  }
+
+  .messageMe {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .messageMe input, .messageMe button {
+    font-size: 1rem;
+    width: 100%;
+  }
 }

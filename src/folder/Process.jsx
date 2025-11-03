@@ -73,7 +73,7 @@ export default function Process() {
           {/* 3. Develop */}
           <div className={styles.listswork34}>
             <div>
-              <span
+              <span 
                 style={{
                   backgroundColor: "#e31f1fff",
                   width: "2rem",

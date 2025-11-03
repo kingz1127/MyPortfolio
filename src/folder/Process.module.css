@@ -73,3 +73,67 @@
   display: inline-block;
   animation: bounceSides 2s ease-in-out;
 }
+/* ============ Tablets (768px and below) ============ */
+@media (max-width: 1024px) {
+  .processBody {
+    padding: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: auto;
+  }
+
+  .listswork {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .listswork12 div,
+  .listswork34 div {
+    width: 45rem;
+    height: 10rem;
+  }
+
+  .work p {
+    font-size: 1.5rem;
+  }
+}
+
+/* ============ Mobile Phones (600px and below) ============ */
+@media (max-width: 600px) {
+  .processBody {
+    padding: 2rem;
+    margin: 1rem;
+    height: auto;
+  }
+
+  .listswork {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .listswork12,
+  .listswork34 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+
+  .listswork12 div,
+  .listswork34 div {
+    width: 40rem;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  .work p {
+    font-size: 1.2rem;
+  }
+
+  .processBody h1,
+  .processBody h2 {
+    font-size: 1.8rem;
+  }
+}
