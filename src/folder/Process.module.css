@@ -35,13 +35,15 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-
+    align-items: center;
 }
 .listswork12 div, .listswork34 div{
     display: flex;
     column-gap: 0.4rem;
     background-color: rgba(41, 225, 118, 0.2);
     border-radius: 7px;
+    height: 12rem;
+    width: 45rem;
 }
 .listswork12 p, .listswork34 p{
     padding: 2rem;

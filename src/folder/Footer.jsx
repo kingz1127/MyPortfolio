@@ -6,12 +6,12 @@ export default function Footer(){
 
         <div className={styles.header}>
         
-                <div className={styles.initials}>
+                {/* <div className={styles.initials}>
                     <p>A</p>
-                    <p>Adedeji</p>
-                </div>
+                    <p>Adedeji</p> 
+                </div> */}
         
-                <nav>
+                {/* <nav>
                     <a href="">Home</a>
                     <a href="">About</a>
                     <a href="">Process</a>
@@ -19,7 +19,7 @@ export default function Footer(){
                     <a href="">Blog</a>
                     <a href="">Services</a>
                     <a href="">Contact</a>
-                </nav>
+                </nav> */}
 
                 <p>Copyright <BiCopyright /> 2025 Kingz1127.</p>
             </div>

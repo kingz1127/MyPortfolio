@@ -6,11 +6,11 @@ export default function Portfolio() {
         <div>
           <h2>Porfolio</h2>
           <br />
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
             numquam modi odio <br />
             aiores consequatur perspiciatis. Dolor rerum incidunt debitis.
-          </p>
+          </p> */}
         </div>
 
         <div className={styles.allProject}>
@@ -26,11 +26,15 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className={styles.kingzVid}>
-            <video
-              src="images/My new react and 2 more pages - Personal - Microsoft​ Edge 2025-08-28 03-48-05.mp4"
-              controls
-            ></video>
+          <div className={styles.kingE}>
+            <img src="images/Screenshot (80).png" alt=""/>
+            <br />
+            <p>
+              Tomato is an offline <br /> E-commerce food ordering web app{" "}
+              <br /> where Admin can add product, check orders <br />and users can also login, add to cart etc... <br />               <devices className={" "}></devices>
+              <br />
+              Technology: React.
+            </p>
           </div>
 
           <div className={styles.kingzPlay}>

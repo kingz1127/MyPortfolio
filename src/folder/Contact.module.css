@@ -1,0 +1,139 @@
+.ContactBody{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 3rem;
+    column-gap: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    padding: 5rem;
+    background-color: rgb(136, 132, 132, 0.1);
+    text-align: center;
+     transition: transform 0.4s ease-in-out;
+    box-shadow: rgb(136, 132, 132, 0.9);
+}
+.ContactBody:hover{
+     transform: scale(1.01);
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    column-gap: 1rem;
+    background-color: rgb(135, 129, 129);
+    padding: 1rem;
+    border-radius: 6px;
+}
+.goLocation{
+    font-size: 2rem;
+    background-color: rgb(79, 213, 79);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.location a{
+    text-decoration: none;
+    color: white;
+}
+
+.mySocials{
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(135, 129, 129);
+    border-radius: 6px;
+    width: 22rem;
+   margin-bottom: 1rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+.mySocials a{
+    text-decoration: none;
+}
+.mySocials a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7f9;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+}
+.f{
+    color: rgb(39, 1, 253);
+}
+.i{
+    color: rgba(214, 32, 32, 0.7);
+}
+.li{
+    color: rgba(2, 20, 107, 0.7);
+}
+.w{
+    color: rgb(12, 205, 60);
+}
+
+.messageMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem;
+    background-color: rgba(45, 186, 71, 0.2);
+    border-radius: 0.5rem;
+}
+.messageMe form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 2rem;
+}
+.messageMe input{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(231, 227, 227, 0.9);
+}
+.messageMe button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    column-gap: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(53, 53, 194);
+    padding: 0.5rem;
+}
+@keyframes bounceSides {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+}
+.ContactBody h2,
+.ContactBody svg,
+.ContactBody p,
+.ContactBody input,
+.ContactBody button,
+.ContactBody h4{
+  display: inline-block;
+  animation: bounceSides 2s ease-in-out;
+}
