@@ -5,8 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -26,10 +28,10 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.4s ease, color 0.4s ease;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  
+  overflow-x: hidden; Prevent horizontal scroll */
 }
 
 .headerContainer {
@@ -49,8 +51,92 @@ body {
   transform: scale(1.1);
 }
 
+/* ============================= */
+/* 📱 RESPONSIVE TYPOGRAPHY & SPACING */
+/* ============================= */
 
-/* .section {
+/* Tablet Landscape (1024px - 1280px) */
+@media (max-width: 1280px) {
+  html {
+    font-size: 60%; /* 1rem = 9.6px */
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablet Portrait (768px - 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 58%; /* 1rem = 9.28px */
+  }
+
+  body {
+    font-size: 1.6rem;
+    /* padding: 0 1rem; */
+  }
+}
+
+/* Mobile Large (481px - 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 56%; /* 1rem = 8.96px */
+  }
+
+  body {
+    font-size: 1.6rem;
+    /* padding: 0 0.5rem; */
+  }
+
+  /* Adjust spacing for mobile */
+  .section {
+    /* padding: 2rem 1rem; */
+  }
+}
+
+/* Mobile Standard (376px - 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 54%; /* 1rem = 8.64px */
+  }
+
+  body {
+    font-size: 1.6rem;
+    /* padding: 0 0.3rem; */
+  }
+
+  .themeToggle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Small (320px - 375px) */
+@media (max-width: 375px) {
+  html {
+    font-size: 52%; /* 1rem = 8.32px */
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+/* Extra Small Devices (below 320px) */
+@media (max-width: 320px) {
+  html {
+    font-size: 50%; /* 1rem = 8px */
+  }
+}
+
+/* ============================= */
+/* 🎨 GRADIENT BACKGROUNDS (Optional) */
+/* ============================= */
+
+/* Uncomment these if you want animated gradient sections */
+
+/*
+.section {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -58,8 +144,8 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   transition: background 1s ease;
+  padding: 8rem 2rem;
 }
-
 
 .intro-bg {
   background: linear-gradient(270deg, #ff9966, #ff5e62);
@@ -103,7 +189,6 @@ body {
   animation: gradientMove 8s ease infinite;
 }
 
-
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -114,4 +199,100 @@ body {
   100% {
     background-position: 0% 50%;
   }
-} */
+}
+
+/* Responsive gradient sections */
+/*
+@media (max-width: 768px) {
+  .section {
+    padding: 6rem 1.5rem;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 1rem;
+  }
+}
+*/
+
+/* ============================= */
+/* 🔧 UTILITY CLASSES */
+/* ============================= */
+
+/* Container for consistent max-width */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 2rem; */
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* padding: 0 1.5rem; */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    /* padding: 0 1rem; */
+  }
+}
+
+/* Responsive text alignment */
+.text-center-mobile {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center;
+  }
+}
+
+/* Hide on mobile */
+.hide-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* Show only on mobile */
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .show-mobile {
+    display: block;
+  }
+}
+
+/* Responsive spacing */
+.section-spacing {
+  /* padding: 8rem 0; */
+}
+
+@media (max-width: 1024px) {
+  .section-spacing {
+    /* padding: 6rem 0; */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    /* padding: 4rem 0; */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-spacing {
+    /* padding: 3rem 0; */
+  }
+}

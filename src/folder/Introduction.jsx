@@ -13,17 +13,12 @@ export default function Introduction() {
           </p>
           <br />
           <br />
-          <div className={styles.myPics}>
-          <div className={styles.myPic}>
-            <img src="/images/_DSC5087.jpghgyj - Copy.png" alt="" />
-          </div>
-        </div>
-        <br />
           <div className={styles.sayHello}>
           <a href="https://wa.me/+2348131817432/?text=Hello%20there!">
             Say Hello
           </a>
           </div>
+          
 
           <div className={styles.exps}>
 
@@ -45,6 +40,11 @@ export default function Introduction() {
 
         </div>
 
+        <div className={styles.myPics}>
+          <div className={styles.myPic}>
+            <img src="/images/_DSC5087.jpghgyj - Copy.png" alt="" />
+          </div>
+        </div>
         
       </div>
     </>

@@ -144,9 +144,10 @@
 /* Tablet Portrait (768px–1024px) */
 @media (max-width: 1024px) {
   .introBody {
-    flex-direction: column;
+    display: flex;
     column-gap: 0;
     row-gap: 3rem;
+    column-gap: 3rem;
     margin: 2rem;
     padding: 3rem;
     height: auto;
@@ -204,7 +205,8 @@
 /* Mobile Large (481px–768px) */
 @media (max-width: 768px) {
   .introBody {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem;
