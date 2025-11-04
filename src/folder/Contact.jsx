@@ -25,38 +25,40 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("Sending...");
 
-    try {
-      // Updated to use your Render backend URL
-      const res = await fetch("https://adedejiportfolio.onrender.com/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+  try {
+    const res = await fetch("https://adedejiportfolio.onrender.com/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+
+    // Log the full response for debugging
+    console.log("Response:", data);
+
+    if (data.success) {
+      setStatus("✅ Message sent successfully!");
+      setForm({
+        name: "",
+        email: "",
+        location: "",
+        subject: "",
+        message: "",
+        phone: "",
       });
-
-      const data = await res.json();
-
-      if (data.success) {
-        setStatus("✅ Message sent successfully!");
-        setForm({
-          name: "",
-          email: "",
-          location: "",
-          subject: "",
-          message: "",
-          phone: "",
-        });
-      } else {
-        setStatus("❌ Failed to send message.");
-      }
-    } catch (error) {
-      console.error("Error sending message:", error);
-      setStatus("❌ Something went wrong. Please try again.");
+    } else {
+      setStatus(`❌ Failed: ${data.message || 'Unknown error'}`);
     }
-  };
+  } catch (error) {
+    console.error("Error sending message:", error);
+    setStatus("❌ Something went wrong. Please try again.");
+  }
+};
 
   return (
     <div className={styles.ContactBody}>
