@@ -54,7 +54,7 @@ export default function Nav({ theme, toggleTheme }) {
         {/* Theme Toggle (always visible) */}
         <button className={styles.themeToggle} onClick={toggleTheme}>
           {theme === "light" ? (
-            <MdDarkMode />
+            <MdDarkMode style={{color: "black"}} />
           ) : (
             <BsFillSunFill style={{ color: "yellow" }} />
           )}
