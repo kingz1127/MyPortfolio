@@ -30,7 +30,8 @@ export default function Contact() {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("http://localhost:5000/send-email", {
+      // Updated to use your Render backend URL
+      const res = await fetch("https://adedejiportfolio.onrender.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -53,7 +54,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      setStatus("❌ Something went wrong.");
+      setStatus("❌ Something went wrong. Please try again.");
     }
   };
 
