@@ -41,7 +41,7 @@ export default function Introduction() {
 
         <div className={styles.myPics}>
           <div className={styles.myPic}>
-            <img src="images/_DSC5087.jpghgyj - Copy.png" alt="" />
+            <img src="/images/_DSC5087.jpghgyj - Copy.png" alt="" />
           </div>
         </div>
       </div>
