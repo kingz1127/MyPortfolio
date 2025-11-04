@@ -10,12 +10,14 @@
     padding: 5rem;
     background-color: rgb(136, 132, 132, 0.1);
     height: 70vh;
-     transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     box-shadow: rgb(136, 132, 132, 0.9);
 }
+
 .introBody:hover{
   transform: scale(0.980);
 }
+
 .sayHello{
   background-color: #2684d6;
   width: 10rem;
@@ -25,33 +27,34 @@
   align-items: center;
   border-radius: 4px;
 }
+
 .sayHello a{
   text-decoration: none;
-   color: white;
+  color: white;
 }
 
 .myPics{
     background: linear-gradient(90deg, #61c86d, #bd77be, #d58025, #2684d6);
-
     animation: moveGradient 5s ease infinite;
     background-size: 800% 800%;
     width: 22rem;
     height: 39rem;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
 }
+
 .myPic{
     display: flex;
     align-items: end;
     justify-content: center;
-   background: linear-gradient(270deg, #61c86d, #bd77be, #d58025, #2684d6);
+    background: linear-gradient(270deg, #61c86d, #bd77be, #d58025, #2684d6);
     width: 18rem;
     background-size: 800% 800%;
     height: 22rem;
-     animation: moveGradient 10s ease infinite;
-     border-radius: 50%;
+    animation: moveGradient 10s ease infinite;
+    border-radius: 50%;
 }
 
 @keyframes moveGradient {
@@ -64,7 +67,8 @@
     100% {
       background-position: 0% 50%;
     }
-  }
+}
+
 .myPic img{
     width: 25rem;
     height: 30rem;
@@ -104,90 +108,195 @@
 .introBody:hover p {
   animation: bounceSides 1s ease-in-out;
 }
+
 .exps{
   display: flex;
   column-gap: 0.5rem;
   margin-top: 2rem;
 }
+
 .exp{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: rgb(40, 126, 247); */
   background-color: #d66726;
   width: 12rem;
   height: 4rem;
   border-radius: 6px;
   color: white;
 }
+
 /* ============================= */
 /* 📱 RESPONSIVE DESIGN SECTION */
 /* ============================= */
 
-/* Tablet View (768px–1024px) */
+/* Tablet Landscape (1024px–1280px) */
+@media (max-width: 1280px) {
+  .introBody {
+    column-gap: 8rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 4rem;
+  }
+}
+
+/* Tablet Portrait (768px–1024px) */
 @media (max-width: 1024px) {
   .introBody {
-    /* flex-direction: column; */
-    column-gap: 5rem;
+    flex-direction: column;
+    column-gap: 0;
     row-gap: 3rem;
     margin: 2rem;
     padding: 3rem;
     height: auto;
   }
 
+  .introBody h1 {
+    font-size: 2.5rem;
+  }
+
+  .introBody h2 {
+    font-size: 2rem;
+  }
+
+  .introBody p {
+    font-size: 1.5rem !important;
+  }
+
   .myPics {
-    width: 18rem;
-    height: 32rem;
+    width: 20rem;
+    height: 35rem;
   }
 
   .myPic {
-    width: 14rem;
-    height: 18rem;
+    width: 16rem;
+    height: 20rem;
   }
 
   .myPic img {
-    width: 18rem;
-    height: 24rem;
+    width: 20rem;
+    height: 26rem;
+  }
+
+  .sayHello {
+    width: 9rem;
+    height: 3.2rem;
+    font-size: 1rem;
+  }
+
+  .exps {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .exp {
+    width: 10rem;
+    height: 3.8rem;
+  }
+
+  .exp p {
+    font-size: 1rem !important;
+  }
+}
+
+/* Mobile Large (481px–768px) */
+@media (max-width: 768px) {
+  .introBody {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .introBody h1 {
+    font-size: 2rem;
+  }
+
+  .introBody h2 {
+    font-size: 1.6rem;
+  }
+
+  .introBody p {
+    font-size: 1.2rem !important;
+  }
+
+  .myPics {
+    width: 16rem;
+    height: 28rem;
+  }
+
+  .myPic {
+    width: 13rem;
+    height: 16rem;
+  }
+
+  .myPic img {
+    width: 16rem;
+    height: 21rem;
   }
 
   .sayHello {
     width: 8rem;
     height: 3rem;
     font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  .exps {
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
   }
 
   .exp {
-    width: 10rem;
+    width: 100%;
+    max-width: 12rem;
     height: 3.5rem;
+  }
+
+  .exp p {
+    font-size: 0.9rem !important;
   }
 }
 
-/* Mobile View (below 768px) */
-@media (max-width: 768px) {
+/* Mobile Small (320px–480px) */
+@media (max-width: 480px) {
   .introBody {
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-    padding: 2rem;
-    height: auto;
-    /* text-align: center; */
+    margin: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .introBody h1 {
+    font-size: 1.5rem;
+  }
+
+  .introBody h2 {
+    font-size: 1.3rem;
+  }
+
+  .introBody p {
+    font-size: 1rem !important;
   }
 
   .myPics {
-    width: 15rem;
-    height: 26rem;
+    width: 14rem;
+    height: 24rem;
   }
 
   .myPic {
-    width: 12rem;
-    height: 15rem;
+    width: 11rem;
+    height: 14rem;
   }
 
   .myPic img {
-    width: 15rem;
-    height: 20rem;
+    width: 13rem;
+    height: 18rem;
   }
 
   .sayHello {
@@ -198,17 +307,63 @@
 
   .exps {
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.8rem;
   }
 
   .exp {
-    width: 9rem;
+    width: 100%;
+    max-width: 10rem;
     height: 3.2rem;
   }
 
-  .introBody h1,
-  .introBody h2,
-  .introBody p {
-    font-size: 1rem;
+  .exp p {
+    font-size: 0.85rem !important;
+  }
+
+  .exp p:first-child {
+    font-size: 1.1rem !important;
+    font-weight: bold;
+  }
+}
+
+/* Extra Small Mobile (below 375px) */
+@media (max-width: 375px) {
+  .introBody {
+    padding: 1rem;
+    margin: 0.3rem;
+  }
+
+  .introBody h1 {
+    font-size: 1.3rem;
+  }
+
+  .introBody h2 {
+    font-size: 1.1rem;
+  }
+
+  .myPics {
+    width: 12rem;
+    height: 21rem;
+  }
+
+  .myPic {
+    width: 9.5rem;
+    height: 12rem;
+  }
+
+  .myPic img {
+    width: 11rem;
+    height: 16rem;
+  }
+
+  .sayHello {
+    width: 6.5rem;
+    height: 2.6rem;
+    font-size: 0.8rem;
+  }
+
+  .exp {
+    max-width: 9rem;
+    height: 3rem;
   }
 }
