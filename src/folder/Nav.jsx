@@ -42,11 +42,11 @@ export default function Nav({ theme, toggleTheme }) {
 
         {/* Navigation Links */}
         <nav className={`${styles.navMenu} ${menuOpen ? styles.active : ""}`}>
-          <a href="#home" onClick={toggleMenu}><BiHomeAlt2 /> Home</a>
+          <a href="/" onClick={toggleMenu}><BiHomeAlt2 /> Home</a>
           <a href="#about" onClick={toggleMenu}><FcAbout /> About</a>
           <a href="#process" onClick={toggleMenu}><FcProcess /> Process</a>
           <a href="#portfolio" onClick={toggleMenu}><GiSchoolBag /> Portfolio</a>
-          <a href="#blog" onClick={toggleMenu}><RiNewspaperLine /> Blog</a>
+          {/* <a href="#blog" onClick={toggleMenu}><RiNewspaperLine /> Blog</a> */}
           <a href="#services" onClick={toggleMenu}><FcServices /> Services</a>
           <a href="#contact" onClick={toggleMenu}><FcContacts /> Contact</a>
         </nav>
@@ -54,7 +54,7 @@ export default function Nav({ theme, toggleTheme }) {
         {/* Theme Toggle (always visible) */}
         <button className={styles.themeToggle} onClick={toggleTheme}>
           {theme === "light" ? (
-            <MdDarkMode style={{color: "black"}} />
+            <MdDarkMode style={{color: "black"}} /> 
           ) : (
             <BsFillSunFill style={{ color: "yellow" }} />
           )}

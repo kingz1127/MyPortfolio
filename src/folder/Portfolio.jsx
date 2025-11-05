@@ -4,13 +4,8 @@ export default function Portfolio() {
     <>
       <div className={styles.portfolioBody}>
         <div>
-          <h2>Porfolio</h2>
+          <h2>Portfolio</h2>
           <br />
-          {/* <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            numquam modi odio <br />
-            aiores consequatur perspiciatis. Dolor rerum incidunt debitis.
-          </p> */}
         </div>
 
         <div className={styles.allProject}>
@@ -23,7 +18,7 @@ export default function Portfolio() {
               <devices className={" "}></devices>
               <br />
               Technologies: Java, Android SDK etc...
-            </p>
+            </p> 
           </div>
 
           <div className={styles.kingE}>

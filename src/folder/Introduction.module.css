@@ -74,7 +74,7 @@
     height: 30rem;
 } 
 
-/* bounce animation */
+
 @keyframes bounceSides {
   0%, 100% {
     transform: translate(0, 0);
@@ -90,7 +90,7 @@
   }
 }
 
-/* apply animation on load */
+
 .introBody h1,
 .introBody h2,
 .introBody img,
@@ -100,7 +100,7 @@
   animation: bounceSides 2s ease-in-out;
 }
 
-/* bounce again when hovered */
+
 .introBody:hover h1,
 .introBody:hover h2,
 .introBody img,
@@ -127,11 +127,7 @@
   color: white;
 }
 
-/* ============================= */
-/* 📱 RESPONSIVE DESIGN SECTION */
-/* ============================= */
 
-/* Tablet Landscape (1024px–1280px) */
 @media (max-width: 1280px) {
   .introBody {
     column-gap: 8rem;
@@ -141,7 +137,7 @@
   }
 }
 
-/* Tablet Portrait (768px–1024px) */
+
 @media (max-width: 1024px) {
   .introBody {
     display: flex;
@@ -202,10 +198,10 @@
   }
 }
 
-/* Mobile Large (481px–768px) */
+
 @media (max-width: 768px) {
   .introBody {
-    /* flex-direction: column; */
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,7 +262,7 @@
   }
 }
 
-/* Mobile Small (320px–480px) */
+
 @media (max-width: 480px) {
   .introBody {
     margin: 0.5rem;
@@ -328,7 +324,7 @@
   }
 }
 
-/* Extra Small Mobile (below 375px) */
+
 @media (max-width: 375px) {
   .introBody {
     padding: 1rem;

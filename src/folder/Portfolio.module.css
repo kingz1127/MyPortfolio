@@ -89,7 +89,8 @@
   display: inline-block;
   animation: bounceSides 2s ease-in-out;
 }
-/* ============ Tablets (max-width: 1024px) ============ */
+
+
 @media (max-width: 1024px) {
   .portfolioBody {
     padding: 3rem;
@@ -125,7 +126,7 @@
   }
 }
 
-/* ============ Mobile Phones (max-width: 600px) ============ */
+
 @media (max-width: 600px) {
   .portfolioBody {
     margin: 1rem;

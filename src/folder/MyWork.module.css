@@ -102,11 +102,7 @@
     margin-top: 2rem;
 }
 
-/* ============================= */
-/* 📱 RESPONSIVE DESIGN SECTION */
-/* ============================= */
 
-/* Tablet View (768px–1024px) */
 @media (max-width: 1024px) {
   .MyWorkbody {
     flex-direction: column;
@@ -143,7 +139,7 @@
   }
 }
 
-/* Mobile View (below 768px) */
+
 @media (max-width: 768px) {
   .MyWorkbody {
     flex-direction: column;

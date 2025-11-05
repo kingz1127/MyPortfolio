@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; 
   scroll-behavior: smooth;
 }
 
@@ -28,10 +28,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.4s ease, color 0.4s ease;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden; Prevent horizontal scroll */
+  
 }
 
 .headerContainer {
@@ -51,59 +48,64 @@ body {
   transform: scale(1.1);
 }
 
-/* ============================= */
-/* 📱 RESPONSIVE TYPOGRAPHY & SPACING */
-/* ============================= */
 
-/* Tablet Landscape (1024px - 1280px) */
 @media (max-width: 1280px) {
   html {
-    font-size: 60%; /* 1rem = 9.6px */
+    font-size: 60%; 
   }
 
   body {
     font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-/* Tablet Portrait (768px - 1024px) */
+
 @media (max-width: 1024px) {
   html {
-    font-size: 58%; /* 1rem = 9.28px */
+    font-size: 58%; 
   }
 
   body {
     font-size: 1.6rem;
-    /* padding: 0 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 }
 
-/* Mobile Large (481px - 768px) */
+
 @media (max-width: 768px) {
   html {
-    font-size: 56%; /* 1rem = 8.96px */
+    font-size: 56%; 
   }
 
   body {
     font-size: 1.6rem;
-    /* padding: 0 0.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 
-  /* Adjust spacing for mobile */
-  .section {
-    /* padding: 2rem 1rem; */
-  }
+  
 }
 
-/* Mobile Standard (376px - 480px) */
+
 @media (max-width: 480px) {
   html {
-    font-size: 54%; /* 1rem = 8.64px */
+    font-size: 54%;
   }
 
   body {
     font-size: 1.6rem;
-    /* padding: 0 0.3rem; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .themeToggle {
@@ -111,137 +113,48 @@ body {
   }
 }
 
-/* Mobile Small (320px - 375px) */
+
 @media (max-width: 375px) {
   html {
-    font-size: 52%; /* 1rem = 8.32px */
+    font-size: 52%; 
   }
 
   body {
     font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-/* Extra Small Devices (below 320px) */
+
 @media (max-width: 320px) {
   html {
-    font-size: 50%; /* 1rem = 8px */
+    font-size: 50%; 
   }
 }
 
-/* ============================= */
-/* 🎨 GRADIENT BACKGROUNDS (Optional) */
-/* ============================= */
 
-/* Uncomment these if you want animated gradient sections */
 
-/*
-.section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  transition: background 1s ease;
-  padding: 8rem 2rem;
-}
 
-.intro-bg {
-  background: linear-gradient(270deg, #ff9966, #ff5e62);
-  background-size: 200% 200%;
-  animation: gradientMove 8s ease infinite;
-}
-
-.work-bg {
-  background: linear-gradient(270deg, #43cea2, #185a9d);
-  background-size: 200% 200%;
-  animation: gradientMove 10s ease infinite;
-}
-
-.process-bg {
-  background: linear-gradient(270deg, #a8ff78, #78ffd6);
-  background-size: 200% 200%;
-  animation: gradientMove 12s ease infinite;
-}
-
-.portfolio-bg {
-  background: linear-gradient(270deg, #ff6a00, #ee0979);
-  background-size: 200% 200%;
-  animation: gradientMove 9s ease infinite;
-}
-
-.projectidea-bg {
-  background: linear-gradient(270deg, #7f00ff, #e100ff);
-  background-size: 200% 200%;
-  animation: gradientMove 11s ease infinite;
-}
-
-.whatido-bg {
-  background: linear-gradient(270deg, #00c6ff, #0072ff);
-  background-size: 200% 200%;
-  animation: gradientMove 10s ease infinite;
-}
-
-.contact-bg {
-  background: linear-gradient(270deg, #ff7e5f, #feb47b);
-  background-size: 200% 200%;
-  animation: gradientMove 8s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Responsive gradient sections */
-/*
-@media (max-width: 768px) {
-  .section {
-    padding: 6rem 1.5rem;
-    min-height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .section {
-    padding: 4rem 1rem;
-  }
-}
-*/
-
-/* ============================= */
-/* 🔧 UTILITY CLASSES */
-/* ============================= */
-
-/* Container for consistent max-width */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 0 2rem; */
+  
 }
 
 @media (max-width: 768px) {
   .container {
-    /* padding: 0 1.5rem; */
+    
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    /* padding: 0 1rem; */
-  }
+ 
 }
 
-/* Responsive text alignment */
+
 .text-center-mobile {
   text-align: left;
 }
@@ -252,7 +165,7 @@ body {
   }
 }
 
-/* Hide on mobile */
+
 .hide-mobile {
   display: block;
 }
@@ -263,7 +176,7 @@ body {
   }
 }
 
-/* Show only on mobile */
+
 .show-mobile {
   display: none;
 }
@@ -274,25 +187,16 @@ body {
   }
 }
 
-/* Responsive spacing */
-.section-spacing {
-  /* padding: 8rem 0; */
-}
+
 
 @media (max-width: 1024px) {
-  .section-spacing {
-    /* padding: 6rem 0; */
-  }
+  
 }
 
 @media (max-width: 768px) {
-  .section-spacing {
-    /* padding: 4rem 0; */
-  }
+  
 }
 
 @media (max-width: 480px) {
-  .section-spacing {
-    /* padding: 3rem 0; */
-  }
+  
 }

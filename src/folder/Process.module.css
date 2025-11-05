@@ -73,7 +73,8 @@
   display: inline-block;
   animation: bounceSides 2s ease-in-out;
 }
-/* ============ Tablets (768px and below) ============ */
+
+
 @media (max-width: 1024px) {
   .processBody {
     padding: 3rem;
@@ -99,7 +100,7 @@
   }
 }
 
-/* ============ Mobile Phones (600px and below) ============ */
+
 @media (max-width: 600px) {
   .processBody {
     padding: 2rem;

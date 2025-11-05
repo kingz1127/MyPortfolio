@@ -27,7 +27,7 @@ export default function MyWork() {
             </a>
           </div>
         </div>
-
+ 
         <div className={styles.professionalIntro}>
           <h2 className={styles.title}>
            About Me

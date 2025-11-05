@@ -18,7 +18,7 @@ export default function Footer(){
                     <a href="">Portfolio</a>
                     <a href="">Blog</a>
                     <a href="">Services</a>
-                    <a href="">Contact</a>
+                    <a href="">Contact</a> 
                 </nav> */}
 
                 <p>Copyright <BiCopyright /> 2025 Kingz1127.</p>

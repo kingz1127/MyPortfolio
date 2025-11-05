@@ -41,7 +41,7 @@
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
-/* Style for the icons */
+
 .allSkills svg {
   transition: color 0.3s ease;
 }
@@ -50,16 +50,16 @@
   color: #80deea;
 }
 
-/* ✅ Responsive breakpoints */
+
 @media (max-width: 992px) {
   .allSkills {
-    grid-template-columns: repeat(3, 1fr); /* tablets */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 600px) {
   .allSkills {
-    grid-template-columns: repeat(2, 1fr); /* mobile */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 @keyframes bounceSides {

@@ -11,8 +11,10 @@ import Process from "./folder/Process";
 import ProjectIdea from "./folder/ProjectIdea";
 import WhatIDo from "./folder/WhatIDo";
 import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router";
 
 export default function App() {
+
   const [theme, setTheme] = useState("light");
 
   // ✅ Load saved theme on mount
@@ -46,42 +48,42 @@ export default function App() {
       easing: "ease-in-out",
     });
   }, []);
-
+ 
   return (
     <>
-      <Nav theme={theme} toggleTheme={toggleTheme} />
 
-      <section data-aos="fade-up" className="section intro-bg">
+           <Nav theme={theme} toggleTheme={toggleTheme} />
+
+      <section id="home" data-aos="flip-down" className="section intro-bg">
         <Introduction />
       </section>
     
-      <section data-aos="fade-down" className="section work-bg">
+      <section id="about" data-aos="flip-right" className="section work-bg">
         <MyWork />
       </section>
 
-      <section data-aos="fade-right" className="section process-bg">
+      <section id="process" data-aos="flip-left" className="section process-bg">
         <Process />
       </section>
 
-      <section data-aos="fade-left" className="section portfolio-bg">
+      <section id="portfolio" data-aos="flip-up" className="section portfolio-bg">
         <Portfolio />
       </section>
 
-      <section data-aos="flip-up" className="section whatido-bg">
+      <section id="services" data-aos="fade-left" className="section whatido-bg">
         <WhatIDo />
       </section>
 
-      <section data-aos="flip-up" className="section projectidea-bg">
+      <section data-aos="fade-right" className="section projectidea-bg">
         <ProjectIdea />
       </section>
 
-      
-
-      <section data-aos="flip-down" className="section contact-bg">
+      <section id="contact" data-aos="flip-down" className="section contact-bg">
         <Contact />
       </section>
 
       <Footer />
+
     </>
   );
 }

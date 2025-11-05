@@ -14,7 +14,7 @@ export default function Contact() {
     name: "",
     email: "",
     location: "",
-    subject: "",
+    subject: "", 
     message: "",
     phone: "",
   });

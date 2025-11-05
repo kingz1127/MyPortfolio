@@ -106,7 +106,7 @@ export default function Process() {
                 }}
               ></span>
               <p>
-                <BsLaptop
+                <BsLaptop 
                   style={{
                     color: "#131c9cff",
                     fontSize: "2rem",

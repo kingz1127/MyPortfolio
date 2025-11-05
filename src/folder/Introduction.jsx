@@ -25,17 +25,17 @@ export default function Introduction() {
             <div className={styles.exp}>
               <p>2 Y.</p>
               <p style={{fontSize: "1rem", color: "lightgrey"}}>Experience</p>
-            </div>
+            </div> 
 
             <div className={styles.exp}>
-              <p>0+</p>
+              <p>5+</p>
               <p style={{fontSize: "1rem", color: "lightgrey"}}>Project Completed</p>
             </div>
 
-            <div className={styles.exp}>
+            {/* <div className={styles.exp}>
                 <p><strong>0+</strong></p>
               <p style={{fontSize: "1rem", color: "lightgrey"}}>Happy Client</p>
-            </div>
+            </div> */}
           </div>
 
         </div>
